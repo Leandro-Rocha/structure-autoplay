@@ -16,8 +16,8 @@ const AutoplayTab = Template({
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvAutoAttack,
             title: "Module: Auto Attack",
-            container: game.automation.autoplay.modules,
-            value: "autoattack"
+            container: game.automation.autoplay.autoattack,
+            value: "enabled"
         });
 
         createElement("div", "text", this.dvAutoAttack, "Maximum ETA:")
@@ -39,7 +39,7 @@ const AutoplayTab = Template({
 
         this.goldMineTimeSlider = GuiSlider({
             parent: this.dvAutoAttack,
-            container: game.automation.autoplay,
+            container: game.automation.autoplay.autoattack,
             leftText: "0",
             rightText: "120m",
             value: "mineTime",
@@ -56,8 +56,8 @@ const AutoplayTab = Template({
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvEnchantNodes,
             title: "Module: Enchant Nodes",
-            container: game.automation.autoplay.modules,
-            value: "enchantNodes"
+            container: game.automation.autoplay.enchantNodes,
+            value: "enabled"
         });
 
         this.dvEnchantSelector = createElement("div", "selectors", this.dvEnchantNodes)
@@ -101,18 +101,14 @@ const AutoplayTab = Template({
 
 
 
-
-
-
-
         /***********************
         * Summon Clones
         ***********************/
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvSummonClones,
             title: "Module: Summon Clones",
-            container: game.automation.autoplay.modules,
-            value: "summonClones"
+            container: game.automation.autoplay.summonClones,
+            value: "enabled"
         });
 
         /***********************
@@ -121,15 +117,15 @@ const AutoplayTab = Template({
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvFarmMaps,
             title: "Module: Farm Maps",
-            container: game.automation.autoplay.modules,
-            value: "farmMaps"
+            container: game.automation.autoplay.farmMaps,
+            value: "enabled"
         });
 
         createElement("div", "text", this.dvFarmMaps, "Map level N-X:")
 
         this.farmMapLevelSlider = GuiSlider({
             parent: this.dvFarmMaps,
-            container: game.automation.autoplay,
+            container: game.automation.autoplay.farmMaps,
             leftText: "0",
             rightText: "14",
             value: "farmMapMinusLevel",
@@ -152,21 +148,21 @@ const AutoplayTab = Template({
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvDispelShiels,
             title: "Module: Dispel Shiels",
-            container: game.automation.autoplay.modules.dispelShields,
+            container: game.automation.autoplay.dispelShields,
             value: "enabled"
         });
 
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvDispelShiels,
             title: "Dispel Physical",
-            container: game.automation.autoplay.modules.dispelShields,
+            container: game.automation.autoplay.dispelShields,
             value: "dispelPhysical"
         });
 
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvDispelShiels,
             title: "Dispel Magical",
-            container: game.automation.autoplay.modules.dispelShields,
+            container: game.automation.autoplay.dispelShields,
             value: "dispelMagical"
         });
 
