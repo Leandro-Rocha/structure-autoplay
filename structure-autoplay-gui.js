@@ -32,7 +32,7 @@ const AutoplayTab = Template({
             value: "maxETA",
             max: 120,
             min: 0,
-            steps: 100,
+            steps: 120,
             digits: 0,
             className: "automation"
         });
@@ -47,7 +47,7 @@ const AutoplayTab = Template({
             value: "mineTime",
             max: 120,
             min: 0,
-            steps: 100,
+            steps: 120,
             digits: 0,
             className: "automation"
         });
@@ -140,7 +140,7 @@ const AutoplayTab = Template({
             max: 14,
             min: 0,
             shortStep: 1,
-            steps: 100,
+            steps: 10,
             digits: 0,
             onSet() {
                 masterContainer.update(true);
