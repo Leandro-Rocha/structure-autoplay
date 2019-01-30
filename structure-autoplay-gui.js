@@ -13,6 +13,8 @@ const AutoplayTab = Template({
         /***********************
         * Auto Attack
         ***********************/
+        if (!game.automation.autoplay.autoattack) game.automation.autoplay.autoattack = {};
+
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvAutoAttack,
             title: "Module: Auto Attack",
@@ -53,6 +55,8 @@ const AutoplayTab = Template({
         /***********************
         * Enchant Nodes
         ***********************/
+       if (!game.automation.autoplay.enchantNodes) game.automation.autoplay.enchantNodes = {};
+
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvEnchantNodes,
             title: "Module: Enchant Nodes",
@@ -104,6 +108,8 @@ const AutoplayTab = Template({
         /***********************
         * Summon Clones
         ***********************/
+       if (!game.automation.autoplay.summonClones) game.automation.autoplay.summonClones = {};
+
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvSummonClones,
             title: "Module: Summon Clones",
@@ -114,6 +120,8 @@ const AutoplayTab = Template({
         /***********************
         * Farm Maps
         ***********************/
+       if (!game.automation.autoplay.farmMaps) game.automation.autoplay.farmMaps = {};
+
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvFarmMaps,
             title: "Module: Farm Maps",
@@ -145,6 +153,8 @@ const AutoplayTab = Template({
         /***********************
         * Summon Clones
         ***********************/
+       if (!game.automation.autoplay.dispelShields) game.automation.autoplay.dispelShields = {};
+
         this.cbAutoAttack = GuiCheckbox({
             parent: this.dvDispelShiels,
             title: "Module: Dispel Shiels",
